@@ -1,0 +1,10 @@
+16:05:36 **** Incremental Build of configuration Debug for project Temperature_AHT15_AHT25 ****
+make -j8 all 
+arm-none-eabi-size   Temperature_AHT15_AHT25.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25060	    492	   1676	  27228	   6a5c	Temperature_AHT15_AHT25.elf
+Finished building: default.size.stdout
+ 
+
+16:05:38 Build Finished. 0 errors, 0 warnings. (took 1s.835ms)
+

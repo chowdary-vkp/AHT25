@@ -1,0 +1,10 @@
+18:02:19 **** Incremental Build of configuration Debug for project GSM_HAL_API ****
+make -j8 all 
+arm-none-eabi-size   GSM_HAL_API.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8720	     20	   2204	  10944	   2ac0	GSM_HAL_API.elf
+Finished building: default.size.stdout
+ 
+
+18:02:20 Build Finished. 0 errors, 0 warnings. (took 728ms)
+

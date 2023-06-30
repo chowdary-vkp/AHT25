@@ -1,0 +1,13 @@
+/*
+ * MQTTProperties.h
+ *
+ *  Created on: Jun 25, 2023
+ *      Author: dinesh
+ */
+
+#ifndef INC_MQTTPROPERTIES_H_
+#define INC_MQTTPROPERTIES_H_
+
+
+
+#endif /* INC_MQTTPROPERTIES_H_ */

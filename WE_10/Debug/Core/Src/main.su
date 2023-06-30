@@ -1,0 +1,10 @@
+../Core/Src/main.c:74:5:main	8	static
+../Core/Src/main.c:119:5:__io_putchar	16	static
+../Core/Src/main.c:128:6:SystemClock_Config	88	static
+../Core/Src/main.c:170:13:MX_USART1_UART_Init	8	static
+../Core/Src/main.c:203:13:MX_USART2_UART_Init	8	static
+../Core/Src/main.c:236:13:MX_GPIO_Init	32	static
+../Core/Src/main.c:260:6:WE10_Init	144	static
+../Core/Src/main.c:308:6:MQTT_Init	136	static
+../Core/Src/main.c:360:7:mqtt_data_send	64	static
+../Core/Src/main.c:388:6:Error_Handler	4	static,ignoring_inline_asm

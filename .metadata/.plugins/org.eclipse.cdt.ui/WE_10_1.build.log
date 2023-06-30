@@ -1,0 +1,48 @@
+00:48:53 **** Incremental Build of configuration Debug for project WE_10_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:17:23: error: storage size of 'servaddr' isn't known
+   17 |   struct sockaddr_in6 servaddr;
+      |                       ^~~~~~~~
+../Core/Src/main.c:20:3: error: 'RCC_AHB1ENR' undeclared (first use in this function)
+   20 |   RCC_AHB1ENR |= RCC_AHB1ENR_ETH_EN;
+      |   ^~~~~~~~~~~
+../Core/Src/main.c:20:3: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:20:18: error: 'RCC_AHB1ENR_ETH_EN' undeclared (first use in this function); did you mean 'RCC_AHB1ENR_DMA1EN'?
+   20 |   RCC_AHB1ENR |= RCC_AHB1ENR_ETH_EN;
+      |                  ^~~~~~~~~~~~~~~~~~
+      |                  RCC_AHB1ENR_DMA1EN
+../Core/Src/main.c:23:12: warning: implicit declaration of function 'socket' [-Wimplicit-function-declaration]
+   23 |   sockfd = socket(AF_INET6, SOCK_STREAM, 0);
+      |            ^~~~~~
+../Core/Src/main.c:23:19: error: 'AF_INET6' undeclared (first use in this function)
+   23 |   sockfd = socket(AF_INET6, SOCK_STREAM, 0);
+      |                   ^~~~~~~~
+../Core/Src/main.c:23:29: error: 'SOCK_STREAM' undeclared (first use in this function)
+   23 |   sockfd = socket(AF_INET6, SOCK_STREAM, 0);
+      |                             ^~~~~~~~~~~
+../Core/Src/main.c:31:24: warning: implicit declaration of function 'htons' [-Wimplicit-function-declaration]
+   31 |   servaddr.sin6_port = htons(MQTT_PORT);
+      |                        ^~~~~
+../Core/Src/main.c:32:24: warning: implicit declaration of function 'inet6_addr' [-Wimplicit-function-declaration]
+   32 |   servaddr.sin6_addr = inet6_addr("::1");
+      |                        ^~~~~~~~~~
+../Core/Src/main.c:35:8: warning: implicit declaration of function 'connect' [-Wimplicit-function-declaration]
+   35 |   rc = connect(sockfd, (struct sockaddr *)&servaddr, sizeof(servaddr));
+      |        ^~~~~~~
+../Core/Src/main.c:48:8: warning: implicit declaration of function 'send' [-Wimplicit-function-declaration]
+   48 |   rc = send(sockfd, buffer, strlen(buffer), 0);
+      |        ^~~~
+../Core/Src/main.c:55:3: warning: implicit declaration of function 'close'; did you mean 'pclose'? [-Wimplicit-function-declaration]
+   55 |   close(sockfd);
+      |   ^~~~~
+      |   pclose
+../Core/Src/main.c:17:23: warning: unused variable 'servaddr' [-Wunused-variable]
+   17 |   struct sockaddr_in6 servaddr;
+      |                       ^~~~~~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+00:48:54 Build Failed. 6 errors, 7 warnings. (took 833ms)
+

@@ -1,0 +1,15 @@
+main.c:111:6:read_sensor_values	1
+main.c:127:5:main	2
+main.c:191:6:SystemClock_Config	3
+main.c:233:13:MX_I2C1_Init	2
+main.c:267:13:MX_USART1_UART_Init	2
+main.c:300:13:MX_USART2_UART_Init	2
+main.c:333:13:MX_GPIO_Init	1
+main.c:724:6:Sender_Task	4
+main.c:760:6:Receiver_Task	3
+main.c:800:6:WE10_Init	1
+main.c:849:6:MQTT_Init	1
+main.c:901:7:mqtt_data_send	1
+main.c:913:6:HAL_UART_RxCpltCallback	4
+main.c:941:6:HAL_TIM_PeriodElapsedCallback	2
+main.c:958:6:Error_Handler	1

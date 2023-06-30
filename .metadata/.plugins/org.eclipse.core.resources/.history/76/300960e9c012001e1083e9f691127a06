@@ -1,0 +1,13 @@
+/*
+ * MQTTReasonCodes.h
+ *
+ *  Created on: Jun 25, 2023
+ *      Author: dinesh
+ */
+
+#ifndef INC_MQTTREASONCODES_H_
+#define INC_MQTTREASONCODES_H_
+
+
+
+#endif /* INC_MQTTREASONCODES_H_ */

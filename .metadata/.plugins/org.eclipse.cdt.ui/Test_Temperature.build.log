@@ -1,0 +1,10 @@
+16:19:58 **** Build of configuration Debug for project Test_Temperature ****
+make -j8 all 
+arm-none-eabi-size   Test_Temperature.elf 
+   text	   data	    bss	    dec	    hex	filename
+  25436	    484	   1700	  27620	   6be4	Test_Temperature.elf
+Finished building: default.size.stdout
+ 
+
+16:19:59 Build Finished. 0 errors, 0 warnings. (took 729ms)
+

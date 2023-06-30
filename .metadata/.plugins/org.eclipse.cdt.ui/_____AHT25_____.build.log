@@ -1,0 +1,10 @@
+12:47:18 **** Incremental Build of configuration Debug for project _____AHT25_____ ****
+make -j8 all 
+arm-none-eabi-size   _____AHT25_____.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28380	    484	   1876	  30740	   7814	_____AHT25_____.elf
+Finished building: default.size.stdout
+ 
+
+12:47:19 Build Finished. 0 errors, 0 warnings. (took 735ms)
+

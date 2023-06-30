@@ -1,0 +1,83 @@
+14:47:48 **** Incremental Build of configuration Debug for project inbuilt_temp_iot ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:124:4: warning: implicit declaration of function 'WE10_Init' [-Wimplicit-function-declaration]
+  124 |    WE10_Init("Dinu","12345678");
+      |    ^~~~~~~~~
+../Core/Src/main.c:125:4: warning: implicit declaration of function 'MQTT_Init' [-Wimplicit-function-declaration]
+  125 |    MQTT_Init();
+      |    ^~~~~~~~~
+../Core/Src/main.c:137:4: warning: implicit declaration of function 'mqtt_data_send' [-Wimplicit-function-declaration]
+  137 |    mqtt_data_send();
+      |    ^~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:421:6: warning: conflicting types for 'WE10_Init'
+  421 | void WE10_Init (char *SSID, char *PASSWD)
+      |      ^~~~~~~~~
+../Core/Src/main.c:124:4: note: previous implicit declaration of 'WE10_Init' was here
+  124 |    WE10_Init("Dinu","12345678");
+      |    ^~~~~~~~~
+../Core/Src/main.c: In function 'WE10_Init':
+../Core/Src/main.c:446:23: warning: too many arguments for format [-Wformat-extra-args]
+  446 |  sprintf (&buffer[0], "CMD+CONTOAP=Swathi,123456789\r\n", SSID, PASSWD);
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:469:6: warning: conflicting types for 'MQTT_Init'
+  469 | void MQTT_Init()
+      |      ^~~~~~~~~
+../Core/Src/main.c:125:4: note: previous implicit declaration of 'MQTT_Init' was here
+  125 |    MQTT_Init();
+      |    ^~~~~~~~~
+../Core/Src/main.c:521:7: warning: conflicting types for 'mqtt_data_send'
+  521 |  void mqtt_data_send()
+      |       ^~~~~~~~~~~~~~
+../Core/Src/main.c:137:4: note: previous implicit declaration of 'mqtt_data_send' was here
+  137 |    mqtt_data_send();
+      |    ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "inbuilt_temp_iot.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dinesh/Projects_files/temperature/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="inbuilt_temp_iot.map" -Wl,--gc-sections -static -u_printf_float --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: inbuilt_temp_iot.elf
+ 
+arm-none-eabi-size   inbuilt_temp_iot.elf 
+arm-none-eabi-objdump -h -S  inbuilt_temp_iot.elf  > "inbuilt_temp_iot.list"
+   text	   data	    bss	    dec	    hex	filename
+  40172	    488	   1992	  42652	   a69c	inbuilt_temp_iot.elf
+Finished building: default.size.stdout
+ 
+Finished building: inbuilt_temp_iot.list
+ 
+15:04:08 **** Incremental Build of configuration Debug for project Queue ****
+make -j8 all 
+arm-none-eabi-size   Queue.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44140	    488	  18296	  62924	   f5cc	Queue.elf
+Finished building: default.size.stdout
+ 
+17:39:09 **** Build of configuration Debug for project AHT25_FREERTOS ****
+make -j8 all 
+arm-none-eabi-size   AHT25_FREERTOS.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32512	    488	  18416	  51416	   c8d8	AHT25_FREERTOS.elf
+Finished building: default.size.stdout
+ 
+17:40:11 **** Build of configuration Debug for project AHT25_FREERTOS_1 ****
+make -j8 all 
+arm-none-eabi-size   AHT25_FREERTOS_1.elf 
+   text	   data	    bss	    dec	    hex	filename
+  37908	    488	  18424	  56820	   ddf4	AHT25_FREERTOS_1.elf
+Finished building: default.size.stdout
+ 
+17:42:23 **** Incremental Build of configuration Debug for project AHT25_FREERTOS_1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "AHT25_FREERTOS_1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/dinesh/STM32CubeIDE/workspace_1.12.1/AHT25_FREERTOS_1/STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="AHT25_FREERTOS_1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: AHT25_FREERTOS_1.elf
+ 
+arm-none-eabi-size   AHT25_FREERTOS_1.elf 
+arm-none-eabi-objdump -h -S  AHT25_FREERTOS_1.elf  > "AHT25_FREERTOS_1.list"
+   text	   data	    bss	    dec	    hex	filename
+  37652	    488	  18416	  56556	   dcec	AHT25_FREERTOS_1.elf
+Finished building: default.size.stdout
+ 
+Finished building: AHT25_FREERTOS_1.list
+ 

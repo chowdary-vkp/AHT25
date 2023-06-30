@@ -1,0 +1,13 @@
+/*
+ * MQTTPersistence.h
+ *
+ *  Created on: Jun 25, 2023
+ *      Author: dinesh
+ */
+
+#ifndef INC_MQTTPERSISTENCE_H_
+#define INC_MQTTPERSISTENCE_H_
+
+
+
+#endif /* INC_MQTTPERSISTENCE_H_ */

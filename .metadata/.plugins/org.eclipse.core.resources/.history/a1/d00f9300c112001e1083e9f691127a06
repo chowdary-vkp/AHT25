@@ -1,0 +1,13 @@
+/*
+ * MQTTSubscribeOpts.h
+ *
+ *  Created on: Jun 25, 2023
+ *      Author: dinesh
+ */
+
+#ifndef INC_MQTTSUBSCRIBEOPTS_H_
+#define INC_MQTTSUBSCRIBEOPTS_H_
+
+
+
+#endif /* INC_MQTTSUBSCRIBEOPTS_H_ */

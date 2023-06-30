@@ -1,0 +1,39 @@
+17:29:44 **** Incremental Build of configuration Debug for project USART1 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+In file included from ../Core/Src/stm32f4xx_it.c:21:
+../Core/Inc/main.h: In function 'main':
+../Core/Inc/main.h:87:10: warning: unused variable 'c' [-Wunused-variable]
+   87 |     char c;
+      |          ^
+In file included from ../Core/Src/stm32f4xx_hal_msp.c:22:
+../Core/Inc/main.h: In function 'main':
+../Core/Inc/main.h:87:10: warning: unused variable 'c' [-Wunused-variable]
+   87 |     char c;
+      |          ^
+../Core/Inc/main.h: In function 'CMD_1':
+../Core/Inc/main.h:107:2: error: 'c' undeclared (first use in this function)
+  107 |  c = uart1_read();
+      |  ^
+../Core/Inc/main.h:107:2: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Inc/main.h: In function 'CMD_1':
+../Core/Inc/main.h:107:2: error: 'c' undeclared (first use in this function)
+  107 |  c = uart1_read();
+      |  ^
+../Core/Inc/main.h:107:2: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Inc/main.h: In function 'CMD_2':
+../Core/Inc/main.h:112:3: error: 'c' undeclared (first use in this function)
+  112 |   c = uart1_read();
+      |   ^
+../Core/Inc/main.h: In function 'CMD_2':
+../Core/Inc/main.h:112:3: error: 'c' undeclared (first use in this function)
+  112 |   c = uart1_read();
+      |   ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/stm32f4xx_hal_msp.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:34: Core/Src/stm32f4xx_it.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+17:29:45 Build Failed. 7 errors, 2 warnings. (took 800ms)
+

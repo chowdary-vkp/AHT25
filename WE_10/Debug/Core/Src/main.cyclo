@@ -1,0 +1,10 @@
+main.c:74:5:main	1
+main.c:119:5:__io_putchar	1
+main.c:128:6:SystemClock_Config	3
+main.c:170:13:MX_USART1_UART_Init	2
+main.c:203:13:MX_USART2_UART_Init	2
+main.c:236:13:MX_GPIO_Init	1
+main.c:260:6:WE10_Init	1
+main.c:308:6:MQTT_Init	1
+main.c:360:7:mqtt_data_send	1
+main.c:388:6:Error_Handler	1

@@ -1,0 +1,14 @@
+#ifndef AHT25_H
+#define AHT25_H
+
+#include <stdint.h>
+
+#define AHT25_device_address 0x38
+#define AHT25_measurement_trigger 0x2C
+
+uint8_t AHT25_initialization;
+
+void AHT25_init();
+void AHT25_read_data();
+
+#endif

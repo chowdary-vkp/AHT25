@@ -1,0 +1,11 @@
+2023-06-21 20:51:37,116 [INFO] Activator:176 - 
+
+
+2023-06-21 20:51:37,120 [INFO] Activator:177 - !SESSION log4j initialized
+2023-06-21 20:51:44,779 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2023-06-21 20:51:59,446 [ERROR] ConfigurationRetriever:142 - IOException on connection: Read timed out
+2023-06-21 20:51:59,448 [ERROR] ConfigurationRetriever:142 - IOException on connection: Network is unreachable (connect failed)
+2023-06-21 20:51:59,450 [ERROR] ConfigurationRetriever:142 - IOException on connection: Network is unreachable (connect failed)
+2023-06-21 20:52:12,392 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+2023-06-21 20:52:12,392 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: Defaulting to no-operation (NOP) logger implementation
+2023-06-21 20:52:12,392 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
